@@ -1,0 +1,195 @@
+/*
+    Adding Fonts
+*/
+@font-face {
+    font-family: poppins-Light;
+    src: url(assets/fonts/Poppins/Poppins-Light.ttf);
+}
+@font-face {
+    font-family: poppins-Regular;
+    src: url(assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: poppins-Medium;
+    src: url(assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+/*
+    Color Variables
+*/
+:root{
+    --dark: #283C63;
+    --whhite1: #f2f2f2;
+
+    --dark: #142F43;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: poppins-regular;
+    box-sizing: border-box;
+    color: var(--whhite1);
+}
+body{
+    color:var(--white1);
+    background: var(--dark);
+}
+.header{
+    width: 100%;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.header img{
+    border-radius: 50%;
+    border: 3px solid rgba(0,0,0,0.5);
+}
+.name{
+    font-weight: 400;
+    padding-top:20px;
+    padding-bottom: 2px;
+}
+.sub-name{
+    font-weight: 400;
+}
+
+.main-nav{
+    width: auto;
+    box-shadow:inset 4px 4px 4px  rgba(255,255,255,0.2),inset -4px -4px 4px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    margin: 0px 20px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.main-nav a{
+    padding: 22px;
+}
+.home{
+    width: auto;
+    height: auto;
+    box-shadow: -4px -4px 4px rgba(255,255,255,0.2), 4px 4px 4px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    margin: 20px 20px;
+    padding: 20px;
+}
+.home p{
+    padding: 20px;
+    line-height: 1.7rem;
+    /* color: rgba(255,255,255,0.8); */
+}
+.home .small-txt{
+    font-size: .9rem;
+}
+.home .big-txt{
+    display: block;
+    font-size: 25px;
+    padding: 5px 0px;
+}
+.home .inside{
+    padding: 0px 20px;
+    font-size: 15px;
+}
+.home .inside::before{
+    content: "";
+    padding:5px 25px;
+    background-color: transparent;
+    position: relative;
+}
+.all{
+    width: auto;
+    height: auto;
+    box-shadow: -4px -4px 4px rgba(255,255,255,0.2), 4px 4px 4px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    margin: 50px 20px;
+    padding: 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: poppins-regular;
+}
+.all .banner{
+    width: 100%;
+    height: 150px;
+    background-color: royalblue;
+    border-radius: 15px 15px 0px 0px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 100%);
+}
+.all .contact{
+    position: relative;
+}
+.all.contact img{
+    position: absolute;
+    border-radius: 50%;
+    top: 65px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.all h2{
+    margin-top: 10px;
+}
+.all nav{
+display: flex;
+flex-direction: row;
+margin: 20PX;
+}
+.all nav a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--whhite1);
+    padding: 25px;
+}
+.all ul{
+    padding-bottom: 20px;
+}
+.all ul li{
+    list-style-type: none;
+    display: flex;
+    border-bottom:1px solid rgba(0,0,0,0.3);
+    padding: 20px 2px;
+    margin: 0px 20px;
+}
+.all ul img{
+    margin: 10px;
+}
+.all ul span{
+    width: calc(100% - 80px);
+    height:25px;
+}
+.all ul span .sub-text{
+    font-size: .9rem;
+    line-height: 20px;
+    margin: 10px;
+}
+.all ul span span{
+    font-size: .6rem;
+}
+nav a{
+    transition: .4s ease-in-out;
+}
+nav a:hover{
+    background: royalblue;
+}
+#error{
+    display: none;
+}
+@media screen and (min-width: 768px){
+.container{
+    display:none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#error{
+    display: block;
+    font-weight: 400;
+}
+}
